@@ -20,6 +20,8 @@ import java.lang.String;
 import android.os.Environment;
 import android.graphics.Color;
 import android.util.Log;
+
+import com.qualcomm.ar.pl.ARHttpRequest;
 /* import yang belum kepake
 *
 * import java.lang.Object;
@@ -29,9 +31,13 @@ import android.util.Log;
 * import android.text;
 * import android.util;
 *
+* import com.faceapp.*; // faceplusplus API
+*
 * */
 
 public class FaceRecog {
+
+    //ARHttpRequest httpRequest = new ARHttpRequests(you_api_key_string, you_api_secret_string);
 
     public class FaceView extends View{
         /*
