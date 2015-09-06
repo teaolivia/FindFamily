@@ -4,24 +4,32 @@ package com.example.theaolivia.findfamily;
  * Created by theaolivia on 9/6/15.
  */
 
-import java.lang.Object;
+
 
 import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.hardware.Camera.Face;
-import android.hardware.Camera.FaceDetectionListener;
+
 import android.media.FaceDetector;
 import android.view.View;
 import android.graphics.Bitmap;
 import android.graphics.PointF;
-import android.graphics.Paint;
+
 import java.lang.String;
 import android.os.Environment;
 import android.graphics.Color;
 import android.util.Log;
-
+/* import yang belum kepake
+*
+* import java.lang.Object;
+* import android.hardware.Camera.Face;
+* import android.hardware.Camera.FaceDetectionListener;
+* import android.graphics.Paint;
+* import android.text;
+* import android.util;
+*
+* */
 
 public class FaceRecog {
 
@@ -69,19 +77,15 @@ public class FaceRecog {
             canvas.drawBitmap(background_image, 0, 0, null);
             for (int i = 0; i < face_count; i++) {
                 FaceDetector.Face face = faces[i];
-
                 tmp_paint.setColor(Color.RED);
-
                 tmp_paint.setAlpha(100);
-
                 face.getMidPoint(tmp_point);
-
                 canvas.drawCircle(tmp_point.x, tmp_point.y, face.eyesDistance(),
                         tmp_paint);
 
             }
         }
 
-        //public void
+        // public void
     }
 }

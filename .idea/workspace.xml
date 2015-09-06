@@ -71,8 +71,8 @@
       <file leaf-file-name="FaceRecog.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/theaolivia/findfamily/FaceRecog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64935064">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.53246754">
+              <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1541,8 +1541,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="529" />
-    <option name="y" value="50" />
+    <option name="x" value="527" />
+    <option name="y" value="47" />
     <option name="width" value="867" />
     <option name="height" value="728" />
   </component>
@@ -1872,7 +1872,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="529" y="50" width="867" height="728" extended-state="0" />
+    <frame x="527" y="47" width="867" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1960,8 +1960,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/theaolivia/findfamily/FaceRecog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64935064">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.53246754">
+          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
