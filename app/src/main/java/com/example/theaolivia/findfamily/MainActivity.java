@@ -4,13 +4,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.graphics.Camera;
+import android.util.Log;
+
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "LOL";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.i(TAG, "LOOL");
+    }
+
+    protected void OnStart(){
+        // jika mulai dibuka
+        super.onStart();
+        Log.i(TAG, "onStart");
     }
 
     @Override
@@ -33,5 +45,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onScreen(Camera camera){
+        // Display camera on
+        FaceRecog fr = new FaceRecog();
     }
 }

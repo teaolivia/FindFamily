@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/theaolivia/GitHub/FindFamily/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/theaolivia/GitHub/FindFamily/app/build/intermediates/pre-dexed/debug/classes-089dba3cf25c4ec483d1273d7dff0e8ddc07957c.jar" />
+    </item>
+    <item
+        jar="/Users/theaolivia/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/theaolivia/GitHub/FindFamily/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-27c361aadd27ce5a5636b3ca54fa25db449ac5d5.jar" />
+    </item>
+    <item
+        jar="/Users/theaolivia/GitHub/FindFamily/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/theaolivia/GitHub/FindFamily/app/build/intermediates/pre-dexed/debug/classes-cacd2690d646c5163c0817acbef48100bcbc98ab.jar" />
+    </item>
+    <item
+        jar="/Users/theaolivia/GitHub/FindFamily/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/theaolivia/GitHub/FindFamily/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-5dcc628d2858c2d439d803bd1361453ab7b1d53a.jar" />
+    </item>
+    <item
+        jar="/Users/theaolivia/GitHub/FindFamily/app/src/main/vuforia-sdk-android-5-0-5/build/java/vuforia/Vuforia.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="41d57a73e39cc4f881f7409fb36d82373706a3b1">
+        <dex dex="/Users/theaolivia/GitHub/FindFamily/app/build/intermediates/pre-dexed/debug/Vuforia-336bf818d80067fa33bea0069d5edea63ec68aa9.jar" />
+    </item>
+
+</items>

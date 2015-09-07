@@ -10,34 +10,106 @@ import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Rect;
 
+import android.hardware.Camera;
 import android.media.FaceDetector;
 import android.view.View;
 import android.graphics.Bitmap;
 import android.graphics.PointF;
 
+import java.lang.Object;
 import java.lang.String;
+
 import android.os.Environment;
 import android.graphics.Color;
 import android.util.Log;
-
+import android.graphics.Matrix;
+import android.hardware.Camera.CameraInfo;
+import android.hardware.Camera.FaceDetectionListener;
 import com.qualcomm.ar.pl.ARHttpRequest;
+import android.hardware.Camera.Face;
+import android.hardware.Camera.Parameters;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /* import yang belum kepake
-*
-* import java.lang.Object;
-* import android.hardware.Camera.Face;
-* import android.hardware.Camera.FaceDetectionListener;
-* import android.graphics.Paint;
-* import android.text;
-* import android.util;
-*
-* import com.faceapp.*; // faceplusplus API
-*
-* */
+ *
+ * import android.graphics.Paint;
+ * import android.text;
+ * import android.util;
+ *
+ *
+ * */
 
 public class FaceRecog {
 
     //ARHttpRequest httpRequest = new ARHttpRequests(you_api_key_string, you_api_secret_string);
+
+    public FaceRecog(){
+
+    private static String TAG = "LOL";
+
+    }
+
+    public int doFaceDetection() {
+        if (faceDetectionRunning) {
+            return 0;
+        }
+        // check if face detection is supported or not
+        // using Camera.Parameters
+        if (params.getMaxDetectedFaces() <= 0) {
+            Log.e(TAG, "Face Detection not supported");
+            return -1;
+        }
+
+        MyFaceDetectionListener fDListener = new MyFaceDetectionListener();
+        mCamera.setFaceDetectionListener(fDetectionListener);
+        mCamera.startFaceDetection();
+        faceDetectionRunning = true;
+        return 1;
+    }
+
+    public int stopFaceDetection() {
+        if (faceDetectionRunning) {
+            mCamera.stopFaceDetection();
+            faceDetectionRunning = false;
+            return 1;
+        }
+        return 0;
+    }
+
+    private class MyFaceDetectionListener
+            implements Camera.FaceDetectionListener {
+
+        @Override
+        public void onFaceDetection(Face[] faces, Camera camera) {
+
+            if (faces.length == 0) {
+                Log.i(TAG, "No faces detected");
+            } else if (faces.length > 0) {
+                Log.i(TAG, "Faces Detected = " +
+                        String.valueOf(faces.length));
+
+                public List<Rect> faceRects;
+                faceRects = new ArrayList<Rect>();
+
+                for (int i=0; i<faces.length; i++) {
+                    int left = faces[i].rect.left;
+                    int right = faces[i].rect.right;
+                    int top = faces[i].rect.top;
+                    int bottom = faces[i].rect.bottom;
+                    Rect uRect = new Rect(left0, top0, right0, bottom0);
+                    faceRects.add(uRect);
+                }
+
+                // add function to draw rects on view/surface/canvas
+            }
+        }
+    }
+
+
 
     public class FaceView extends View{
         /*
@@ -92,6 +164,10 @@ public class FaceRecog {
             }
         }
 
-        // public void
+        public void callRegister() {
+            // untuk memanggil data foto yang sudah direkam posisi titiknya
+            onDraw ad = new onDraw(canvas);
+            
+        }
     }
 }
