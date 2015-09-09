@@ -17,6 +17,8 @@ import android.media.FaceDetector;
 import android.view.View;
 import android.graphics.Bitmap;
 import android.graphics.PointF;
+import android.media.FaceDetector.Face;
+import android.media.FaceDetector.Face;
 
 import java.lang.Object;
 import java.lang.String;
@@ -46,6 +48,11 @@ import java.util.List;
 public class FaceRecog {
 
     //ARHttpRequest httpRequest = new ARHttpRequests(you_api_key_string, you_api_secret_string);
+    private Bitmap mFaceBitmap;
+    private int mFaceWidth = 200;
+    private int mFaceHeight = 200;
+    private static final int MAX_FACES = 1;
+    private static String TAG = "LOLOLOL";
 
     public FaceRecog(){
 
@@ -53,7 +60,7 @@ public class FaceRecog {
 
     }
 
-    public int doFaceDetection() {
+   /* public int doFaceDetection() {
         if (faceDetectionRunning) {
             return 0;
         }
@@ -109,7 +116,7 @@ public class FaceRecog {
         }
     }
 
-
+*/
 
     public class FaceView extends View{
         /*
@@ -164,10 +171,17 @@ public class FaceRecog {
             }
         }
 
-        public void callRegister() {
-            // untuk memanggil data foto yang sudah direkam posisi titiknya
-            onDraw ad = new onDraw(canvas);
-            
+        public void setFaces(){
+            // setter wajah yang dideteksi
+            FaceDetector fd;
+            FaceDetector.Face [] faces = new FaceDetector.Face(MAX_FACES);
+            PointF midpoint = new PointF();
+            private float .android.media.FaceDetector.Face.CONFIDENCE_THRESHOLD; // standar face recognition untuk validasi cek
+            private int .FaceDetector.Face.EULER_X;
+            private int .FaceDetector.Face.EULER_Y;
+            private int .FaceDetector.Face.EULER_Z;
+        }
+
         }
     }
 }
